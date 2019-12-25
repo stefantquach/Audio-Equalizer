@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Mon Oct  7 15:18:52 2019
+# Process ID: 17032
+# Current directory: H:/ESE465/Microblaze/Microblaze.runs/design_1_Axi4LiteRegs_0_0_synth_1
+# Command line: vivado.exe -log design_1_Axi4LiteRegs_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Axi4LiteRegs_0_0.tcl
+# Log file: H:/ESE465/Microblaze/Microblaze.runs/design_1_Axi4LiteRegs_0_0_synth_1/design_1_Axi4LiteRegs_0_0.vds
+# Journal file: H:/ESE465/Microblaze/Microblaze.runs/design_1_Axi4LiteRegs_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Axi4LiteRegs_0_0.tcl -notrace

@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 27 11:02:05 2019
+# Process ID: 31972
+# Current directory: C:/Users/stefa/Documents/FIR_Peripheral
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27544 C:\Users\stefa\Documents\FIR_Peripheral\FIR_Peripheral.xpr
+# Log file: C:/Users/stefa/Documents/FIR_Peripheral/vivado.log
+# Journal file: C:/Users/stefa/Documents/FIR_Peripheral\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa/Documents/FIR_Peripheral/FIR_Peripheral.xpr
+export_ip_user_files -of_objects  [get_files {{C:/Users/stefa/Documents/SPI Peripheral/Axi4Lite_SPI.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/stefa/Documents/SPI Peripheral/Axi4Lite_SPI.v}}
+add_files -norecurse C:/Users/stefa/Documents/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v
+add_files -norecurse {C:/Users/stefa/Documents/FIR_Peripheral/DacTester.v C:/Users/stefa/Documents/FIR_Peripheral/AdcTester.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/stefa/Documents/SPI Peripheral/DacTester.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/stefa/Documents/SPI Peripheral/DacTester.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/stefa/Documents/SPI Peripheral/AdcTester.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/stefa/Documents/SPI Peripheral/AdcTester.v}}
+export_ip_user_files -of_objects  [get_files C:/Users/stefa/Documents/FIR_Peripheral/AdcTester.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/stefa/Documents/FIR_Peripheral/DacTester.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/stefa/Documents/FIR_Peripheral/AdcTester.v C:/Users/stefa/Documents/FIR_Peripheral/DacTester.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/stefa/Documents/FIR_Peripheral/DacTester.v C:/Users/stefa/Documents/FIR_Peripheral/AdcTester.v}
+set_property top Axi4FIR_Periph_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg
+source Axi4FIR_Periph_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg
+source Axi4FIR_Periph_tb.tcl
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+run 1us
+run 500us
+relaunch_sim
+run 200us
+relaunch_sim
+run 150us
+relaunch_sim
+run 150us
+run 200us
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+relaunch_sim
+run 200us
+run 100us
+relaunch_sim
+run 300us
+run 10ns
+relaunch_sim
+run 300us
+relaunch_sim
+run 150us
+relaunch_sim
+run 150us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 150us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 150us
+relaunch_sim
+run 150us
+run 100us
+run 100us
+relaunch_sim
+run 400us
+relaunch_sim
+run 400us
+relaunch_sim
+run 400us
+relaunch_sim
+run 400us
+relaunch_sim
+run 400us
+relaunch_sim
+run 400us
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+relaunch_sim
+run 400us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+relaunch_sim
+run 500us
+run 100us
+run 100us
+relaunch_sim
+run 600us
+run 500us
+relaunch_sim
+run 700us
+run 100us
+relaunch_sim
+run 500us
+relaunch_sim
+run 500us
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/FIR_Peripheral/FIR_Periph_tb_behav.wcfg}
+close_sim

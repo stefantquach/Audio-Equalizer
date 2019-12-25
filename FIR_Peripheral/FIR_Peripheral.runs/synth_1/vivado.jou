@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 11 18:17:39 2019
+# Process ID: 13528
+# Current directory: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1
+# Command line: vivado.exe -log Axi4Lite_Equalizer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Axi4Lite_Equalizer.tcl
+# Log file: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1/Axi4Lite_Equalizer.vds
+# Journal file: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Axi4Lite_Equalizer.tcl -notrace

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 28 18:56:49 2019
+# Process ID: 9324
+# Current directory: H:/ESE465/Microblaze
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21024 H:\ESE465\Microblaze\Microblaze.xpr
+# Log file: H:/ESE465/Microblaze/vivado.log
+# Journal file: H:/ESE465/Microblaze\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/ESE465/Microblaze/Microblaze.xpr
+update_compile_order -fileset sources_1
+open_bd_design {H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/design_1.bd}
+add_files -norecurse {H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/ADC_DAC_Manager.v H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/Axi4Lite_Equalizer.v H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v}
+update_compile_order -fileset sources_1
+add_files -norecurse H:/ESE465/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v
+update_compile_order -fileset sources_1

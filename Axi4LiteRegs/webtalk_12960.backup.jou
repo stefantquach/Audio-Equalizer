@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  5 15:22:23 2019
+# Process ID: 12960
+# Current directory: h:/ESE465/Axi4LiteRegs
+# Command line: wbtcv.exe -mode batch -source H:/ESE465/blinky/blinky.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: h:/ESE465/Axi4LiteRegs/webtalk.log
+# Journal file: h:/ESE465/Axi4LiteRegs\webtalk.jou
+#-----------------------------------------------------------
+source H:/ESE465/blinky/blinky.hw/webtalk/labtool_webtalk.tcl -notrace

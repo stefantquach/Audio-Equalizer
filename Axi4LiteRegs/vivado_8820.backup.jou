@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  4 17:36:11 2019
+# Process ID: 8820
+# Current directory: H:/ESE465/Axi4LiteRegs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12476 H:\ESE465\Axi4LiteRegs\Axi4LiteRegs.xpr
+# Log file: H:/ESE465/Axi4LiteRegs/vivado.log
+# Journal file: H:/ESE465/Axi4LiteRegs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  5 13:00:42 2019
+# Process ID: 8372
+# Current directory: H:/ESE465/Axi4LiteRegs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12164 H:\ESE465\Axi4LiteRegs\Axi4LiteRegs.xpr
+# Log file: H:/ESE465/Axi4LiteRegs/vivado.log
+# Journal file: H:/ESE465/Axi4LiteRegs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+create_project blinky H:/ESE465/blinky -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+apply_board_connection -board_interface "push_buttons_5bits" -ip_intf "axi_gpio_0/GPIO" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "rgb_led" -ip_intf "/axi_gpio_0/GPIO2" -diagram "design_1" 
+undo
+apply_board_connection -board_interface "led_16bits" -ip_intf "/axi_gpio_0/GPIO2" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+apply_board_connection -board_interface "rgb_led" -ip_intf "axi_gpio_1/GPIO" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "dip_switches_16bits" -ip_intf "/axi_gpio_1/GPIO2" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "design_1" 
+endgroup
+startgroup
+set_property -dict [list CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {30.000} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33.250} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {296.460} CONFIG.CLKOUT1_PHASE_ERROR {293.793}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+apply_board_connection -board_interface "usb_uart" -ip_intf "axi_uartlite_0/UART" -diagram "design_1" 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz_0/resetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {/clk_wiz_0/clk_out1 (30 MHz)} debug_module {Debug Only} ecc {None} local_mem {64KB} preset {None}}  [get_bd_cells microblaze_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_1/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_0_30M/ext_reset_in]
+endgroup
+validate_bd_design
+make_wrapper -files [get_files H:/ESE465/blinky/blinky.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse H:/ESE465/blinky/blinky.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+file mkdir H:/ESE465/blinky/blinky.sdk
+file copy -force H:/ESE465/blinky/blinky.runs/impl_1/design_1_wrapper.sysdef H:/ESE465/blinky/blinky.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace H:/ESE465/blinky/blinky.sdk -hwspec H:/ESE465/blinky/blinky.sdk/design_1_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/ESE465/blinky/blinky.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ESE465/blinky/blinky.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {H:/ESE465/blinky/blinky.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+current_project Axi4LiteRegs
+close_sim
+launch_simulation
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config H:/ESE465/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_design
+current_project blinky
+save_bd_design
+close_bd_design [get_bd_designs design_1]
+close_hw
+close_design
+create_project Microblaze H:/ESE465/Microblaze -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+apply_board_connection -board_interface "push_buttons_5bits" -ip_intf "axi_gpio_0/GPIO" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "led_16bits" -ip_intf "/axi_gpio_0/GPIO2" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+apply_board_connection -board_interface "rgb_led" -ip_intf "axi_gpio_1/GPIO" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "dip_switches_16bits" -ip_intf "/axi_gpio_1/GPIO2" -diagram "design_1" 
+current_project blinky
+open_bd_design {H:/ESE465/blinky/blinky.srcs/sources_1/bd/design_1/design_1.bd}
+current_project Microblaze
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "design_1" 
+endgroup
+startgroup
+set_property -dict [list CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {30.000} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33.250} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {296.460} CONFIG.CLKOUT1_PHASE_ERROR {293.793}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+apply_board_connection -board_interface "usb_uart" -ip_intf "axi_uartlite_0/UART" -diagram "design_1" 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz_0/resetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {/clk_wiz_0/clk_out1 (30 MHz)} debug_module {Debug Only} ecc {None} local_mem {64KB} preset {None}}  [get_bd_cells microblaze_0]
+regenerate_bd_layout
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_1/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_0_30M/ext_reset_in]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+current_project blinky
+close_project
+current_project Axi4LiteRegs
+close_project
+add_files -norecurse {H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteRegs.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference Axi4LiteRegs Axi4LiteRegs_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (30 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_out1 (30 MHz)} Master {/microblaze_0 (Periph)} Slave {/Axi4LiteRegs_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins Axi4LiteRegs_0/S_AXI]
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+close_hw
+make_wrapper -files [get_files H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M03_AXI] [get_bd_cells Axi4LiteRegs_0]
+export_ip_user_files -of_objects  [get_files H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteRegs.v] -no_script -reset -force -quiet
+remove_files  H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteRegs.v
+update_module_reference design_1_Axi4LiteRegs_0_0
+update_compile_order -fileset sources_1
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir H:/ESE465/Microblaze/Microblaze.sdk
+file copy -force H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.sysdef H:/ESE465/Microblaze/Microblaze.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace H:/ESE465/Microblaze/Microblaze.sdk -hwspec H:/ESE465/Microblaze/Microblaze.sdk/design_1_wrapper.hdf
+launch_sdk -workspace H:/ESE465/Microblaze/Microblaze.sdk -hwspec H:/ESE465/Microblaze/Microblaze.sdk/design_1_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+create_ip_run [get_files -of_objects [get_fileset sources_1] H:/ESE465/Microblaze/Microblaze.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design

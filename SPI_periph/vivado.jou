@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 11 20:43:56 2019
+# Process ID: 33824
+# Current directory: C:/Users/stefa/Documents/SPI_periph
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16524 C:\Users\stefa\Documents\SPI_periph\SPI_periph.xpr
+# Log file: C:/Users/stefa/Documents/SPI_periph/vivado.log
+# Journal file: C:/Users/stefa/Documents/SPI_periph\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa/Documents/SPI_periph/SPI_periph.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v C:/Users/stefa/Documents/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteManager.v}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/SPI_periph/Axi4Lite_SPI_tb_behav.wcfg
+source Axi4Lite_SPI_tb.tcl
+run 60us
+run 60us
+run 60us
+run 60us
+relaunch_sim
+run 60us
+save_wave_config {C:/Users/stefa/Documents/SPI_periph/Axi4Lite_SPI_tb_behav.wcfg}
+close_sim

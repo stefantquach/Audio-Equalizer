@@ -1,0 +1,898 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 11 18:17:39 2019
+# Process ID: 13528
+# Current directory: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1
+# Command line: vivado.exe -log Axi4Lite_Equalizer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Axi4Lite_Equalizer.tcl
+# Log file: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1/Axi4Lite_Equalizer.vds
+# Journal file: H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Axi4Lite_Equalizer.tcl -notrace
+Command: synth_design -top Axi4Lite_Equalizer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13932 
+WARNING: [Synth 8-2507] parameter declaration becomes local in Axi4LiteManager with formal parameter declaration list [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteManager.v:59]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Axi4LiteSupporter with formal parameter declaration list [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v:56]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ram with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/imports/new/ram.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in FIR_Periph with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:47]
+WARNING: [Synth 8-2507] parameter declaration becomes local in FIR_Periph with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:48]
+WARNING: [Synth 8-2507] parameter declaration becomes local in FIR_Periph with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:49]
+WARNING: [Synth 8-2507] parameter declaration becomes local in FIR_Periph with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:52]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ADC_DAC_Controller with formal parameter declaration list [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/ADC_DAC_Manager.v:155]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Axi4Lite_SPI with formal parameter declaration list [H:/ESE465/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v:71]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 576.855 ; gain = 187.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Axi4Lite_Equalizer' [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/Axi4Lite_Equalizer.v:23]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter NUM_FILTERS bound to: 13 - type: integer 
+	Parameter NUM_TAPS bound to: 279 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Axi4LiteSupporter' [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v:23]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter RD1 bound to: 1 - type: integer 
+	Parameter WR1 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Axi4LiteSupporter' (1#1) [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FIR_Periph' [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:23]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter NUM_FILTERS bound to: 13 - type: integer 
+	Parameter NUM_TAPS bound to: 279 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter BYTE_BITS bound to: 2 - type: integer 
+	Parameter TAP_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter IDLE bound to: 1 - type: integer 
+	Parameter CALC bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ram' [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/imports/new/ram.v:23]
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter numRegisters bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram' (2#1) [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/imports/new/ram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_Periph' (3#1) [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_DAC_Controller' [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/ADC_DAC_Manager.v:23]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter INIT0 bound to: 0 - type: integer 
+	Parameter INIT1 bound to: 1 - type: integer 
+	Parameter INIT2 bound to: 2 - type: integer 
+	Parameter INIT3 bound to: 3 - type: integer 
+	Parameter INIT4 bound to: 4 - type: integer 
+	Parameter READ_ADC bound to: 5 - type: integer 
+	Parameter WRITE_DAC bound to: 6 - type: integer 
+	Parameter WAIT1 bound to: 7 - type: integer 
+	Parameter WAIT2 bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Axi4LiteManager' [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteManager.v:24]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter RD1 bound to: 1 - type: integer 
+	Parameter WR1 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Axi4LiteManager' (4#1) [H:/ESE465/Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteManager.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_DAC_Controller' (5#1) [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/ADC_DAC_Manager.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Axi4Lite_SPI' [H:/ESE465/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v:3]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter SPI_COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter DATA1 bound to: 1 - type: integer 
+	Parameter DATA2 bound to: 2 - type: integer 
+	Parameter DATA3 bound to: 3 - type: integer 
+	Parameter DATA4 bound to: 4 - type: integer 
+	Parameter DATA5 bound to: 5 - type: integer 
+	Parameter DATA6 bound to: 6 - type: integer 
+	Parameter DATA7 bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [H:/ESE465/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'Axi4Lite_SPI' (6#1) [H:/ESE465/SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Axi4Lite_Equalizer' (7#1) [H:/ESE465/FIR_Peripheral/FIR_Peripheral.srcs/sources_1/new/Axi4Lite_Equalizer.v:23]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WVALID
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_BREADY
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_AWREADY
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_ARREADY
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design Axi4LiteManager has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[13]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[12]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[11]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[10]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[9]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[8]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[7]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[6]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[5]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[4]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[3]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[2]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[1]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[0]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrAddr[1]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrAddr[0]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[31]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[30]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[29]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[28]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[27]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[26]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[25]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[24]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[23]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[22]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[21]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[20]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[19]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[18]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[17]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[16]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 625.945 ; gain = 237.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 625.945 ; gain = 237.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 625.945 ; gain = 237.047
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'Axi4LiteSupporter'
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'Axi4LiteManager'
+INFO: [Synth 8-5544] ROM "M_AXI_WSTRB" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'ADC_DAC_Controller'
+INFO: [Synth 8-5546] ROM "channel_D" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADC_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'Axi4Lite_SPI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                             0000
+                     WR1 |                              010 |                             0010
+                     RD1 |                              100 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'Axi4LiteSupporter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                             0000
+                     RD1 |                              010 |                             0001
+                     WR1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'Axi4LiteManager'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   INIT0 |                             0000 |                         00000000
+                   INIT1 |                             0001 |                         00000001
+                   INIT2 |                             0010 |                         00000010
+                   INIT3 |                             0011 |                         00000011
+                   INIT4 |                             0100 |                         00000100
+                READ_ADC |                             0101 |                         00000101
+                   WAIT1 |                             0110 |                         00000111
+                   WAIT2 |                             0111 |                         00001000
+               WRITE_DAC |                             1000 |                         00000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'sequential' in module 'ADC_DAC_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   DATA1 |                              001 |                              001
+                   DATA2 |                              010 |                              010
+                   DATA3 |                              011 |                              011
+                   DATA4 |                              100 |                              100
+                   DATA5 |                              101 |                              101
+                   DATA6 |                              110 |                              110
+                   DATA7 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'sequential' in module 'Axi4Lite_SPI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 786.715 ; gain = 397.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 13    
+	  13 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 16    
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               16 Bit    Registers := 27    
+	               14 Bit    Registers := 4     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 20    
+	   4 Input     16 Bit        Muxes := 15    
+	  14 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 6     
+	   8 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 14    
+	   4 Input      9 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 59    
+	   3 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 26    
+	   9 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Axi4LiteSupporter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module FIR_Periph 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 13    
+	  13 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 16    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 27    
+	                9 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 19    
+	   4 Input     16 Bit        Muxes := 15    
+	  14 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 14    
+	   4 Input      9 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   4 Input      1 Bit        Muxes := 24    
+Module Axi4LiteManager 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input     14 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+Module ADC_DAC_Controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 6     
+Module Axi4Lite_SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 3     
+	   8 Input     10 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP filterData15, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData15 is absorbed into DSP filterData15.
+DSP Report: operator filterData16 is absorbed into DSP filterData15.
+DSP Report: Generating DSP filterData12, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[1] is absorbed into DSP filterData12.
+DSP Report: operator filterData12 is absorbed into DSP filterData12.
+DSP Report: operator filterData13 is absorbed into DSP filterData12.
+DSP Report: Generating DSP filterData14, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData14 is absorbed into DSP filterData14.
+DSP Report: operator filterData15 is absorbed into DSP filterData14.
+DSP Report: Generating DSP filterData11, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[2] is absorbed into DSP filterData11.
+DSP Report: operator filterData11 is absorbed into DSP filterData11.
+DSP Report: operator filterData12 is absorbed into DSP filterData11.
+DSP Report: Generating DSP filterData13, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData13 is absorbed into DSP filterData13.
+DSP Report: operator filterData14 is absorbed into DSP filterData13.
+DSP Report: Generating DSP filterData10, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[3] is absorbed into DSP filterData10.
+DSP Report: operator filterData10 is absorbed into DSP filterData10.
+DSP Report: operator filterData11 is absorbed into DSP filterData10.
+DSP Report: Generating DSP filterData12, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData12 is absorbed into DSP filterData12.
+DSP Report: operator filterData13 is absorbed into DSP filterData12.
+DSP Report: Generating DSP filterData9, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[4] is absorbed into DSP filterData9.
+DSP Report: operator filterData9 is absorbed into DSP filterData9.
+DSP Report: operator filterData10 is absorbed into DSP filterData9.
+DSP Report: Generating DSP filterData11, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData11 is absorbed into DSP filterData11.
+DSP Report: operator filterData12 is absorbed into DSP filterData11.
+DSP Report: Generating DSP filterData8, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[5] is absorbed into DSP filterData8.
+DSP Report: operator filterData8 is absorbed into DSP filterData8.
+DSP Report: operator filterData9 is absorbed into DSP filterData8.
+DSP Report: Generating DSP filterData10, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData10 is absorbed into DSP filterData10.
+DSP Report: operator filterData11 is absorbed into DSP filterData10.
+DSP Report: Generating DSP filterData7, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[6] is absorbed into DSP filterData7.
+DSP Report: operator filterData7 is absorbed into DSP filterData7.
+DSP Report: operator filterData8 is absorbed into DSP filterData7.
+DSP Report: Generating DSP filterData9, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData9 is absorbed into DSP filterData9.
+DSP Report: operator filterData10 is absorbed into DSP filterData9.
+DSP Report: Generating DSP filterData6, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[7] is absorbed into DSP filterData6.
+DSP Report: operator filterData6 is absorbed into DSP filterData6.
+DSP Report: operator filterData7 is absorbed into DSP filterData6.
+DSP Report: Generating DSP filterData8, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData8 is absorbed into DSP filterData8.
+DSP Report: operator filterData9 is absorbed into DSP filterData8.
+DSP Report: Generating DSP filterData5, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[8] is absorbed into DSP filterData5.
+DSP Report: operator filterData5 is absorbed into DSP filterData5.
+DSP Report: operator filterData6 is absorbed into DSP filterData5.
+DSP Report: Generating DSP filterData7, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData7 is absorbed into DSP filterData7.
+DSP Report: operator filterData8 is absorbed into DSP filterData7.
+DSP Report: Generating DSP filterData4, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[9] is absorbed into DSP filterData4.
+DSP Report: operator filterData4 is absorbed into DSP filterData4.
+DSP Report: operator filterData5 is absorbed into DSP filterData4.
+DSP Report: Generating DSP filterData6, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData6 is absorbed into DSP filterData6.
+DSP Report: operator filterData7 is absorbed into DSP filterData6.
+DSP Report: Generating DSP filterData3, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[10] is absorbed into DSP filterData3.
+DSP Report: operator filterData3 is absorbed into DSP filterData3.
+DSP Report: operator filterData4 is absorbed into DSP filterData3.
+DSP Report: Generating DSP filterData5, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData5 is absorbed into DSP filterData5.
+DSP Report: operator filterData6 is absorbed into DSP filterData5.
+DSP Report: Generating DSP filterData2, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[11] is absorbed into DSP filterData2.
+DSP Report: operator filterData2 is absorbed into DSP filterData2.
+DSP Report: operator filterData3 is absorbed into DSP filterData2.
+DSP Report: Generating DSP filterData4, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData4 is absorbed into DSP filterData4.
+DSP Report: operator filterData5 is absorbed into DSP filterData4.
+DSP Report: Generating DSP filterData1, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[12] is absorbed into DSP filterData1.
+DSP Report: operator filterData1 is absorbed into DSP filterData1.
+DSP Report: operator filterData2 is absorbed into DSP filterData1.
+DSP Report: Generating DSP filterData15, operation Mode is: (C:0x4000)+A*B.
+DSP Report: operator filterData15 is absorbed into DSP filterData15.
+DSP Report: operator filterData16 is absorbed into DSP filterData15.
+DSP Report: Generating DSP filterData12, operation Mode is: (C:0x2000)+A2*B.
+DSP Report: register atten_reg[0] is absorbed into DSP filterData12.
+DSP Report: operator filterData12 is absorbed into DSP filterData12.
+DSP Report: operator filterData13 is absorbed into DSP filterData12.
+WARNING: [Synth 8-3917] design Axi4Lite_Equalizer has port S_AXI_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design Axi4Lite_Equalizer has port S_AXI_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design Axi4Lite_Equalizer has port S_AXI_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design Axi4Lite_Equalizer has port S_AXI_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_WVALID
+WARNING: [Synth 8-3331] design Axi4LiteSupporter has unconnected port S_AXI_BREADY
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[13]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[12]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[11]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[10]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[9]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[8]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[7]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[6]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[5]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[4]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[3]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[2]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[1]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port rdAddr[0]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrAddr[1]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrAddr[0]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[31]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[30]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[29]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[28]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[27]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[26]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[25]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[24]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[23]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[22]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[21]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[20]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[19]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[18]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[17]
+WARNING: [Synth 8-3331] design FIR_Periph has unconnected port wrData[16]
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_WVALID
+WARNING: [Synth 8-3331] design Axi4Lite_Equalizer has unconnected port S_AXI_BREADY
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/currentState_reg[3]' (FDRE) to 'FIR_Periph1/currentState_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIR_Periph1/\currentState_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[0]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[1]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[2]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[3]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[4]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[5]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[6]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[7]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[8]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[9]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[10]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[11]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/rdAddrQ_reg[12]' (FDRE) to 'Controller/DAC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/DAC_manager/FSM_onehot_currentState_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/DAC_manager/rdAddrQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[17]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[18]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[19]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[20]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[22]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[23]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[24]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[25]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[25]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[26]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[27]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[28]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[29]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrDataQ_reg[30]' (FDE) to 'Controller/DAC_manager/wrDataQ_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/DAC_manager/wrDataQ_reg[31] )
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[0]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[1]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[4]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[5]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[6]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[7]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[8]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[9]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[10]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[11]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Controller/DAC_manager/wrAddrQ_reg[12]' (FDRE) to 'Controller/DAC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/DAC_manager/wrAddrQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[0]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[1]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[2]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[3]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[4]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[5]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[6]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[7]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[8]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[9]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[10]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[11]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/rdAddrQ_reg[12]' (FDRE) to 'Controller/ADC_manager/rdAddrQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/ADC_manager/rdAddrQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[0]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[1]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[2]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[3]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[5]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[6]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[7]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[9]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[10]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[11]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[12]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[13]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[16]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[17]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[18]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[19]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[20]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[21]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[22]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[23]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[24]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[25]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[25]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[26]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[27]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[28]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[29]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrDataQ_reg[30]' (FDE) to 'Controller/ADC_manager/wrDataQ_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/ADC_manager/wrDataQ_reg[31] )
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[0]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[1]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[4]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[5]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[6]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[7]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[8]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[9]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[10]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[11]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Controller/ADC_manager/wrAddrQ_reg[12]' (FDRE) to 'Controller/ADC_manager/wrAddrQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Controller/ADC_manager/wrAddrQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[2]' (FDRE) to 'FIR_Periph1/status_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[3]' (FDRE) to 'FIR_Periph1/status_reg[4]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[4]' (FDRE) to 'FIR_Periph1/status_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[5]' (FDRE) to 'FIR_Periph1/status_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[6]' (FDRE) to 'FIR_Periph1/status_reg[7]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[7]' (FDRE) to 'FIR_Periph1/status_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[8]' (FDRE) to 'FIR_Periph1/status_reg[9]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[9]' (FDRE) to 'FIR_Periph1/status_reg[10]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[10]' (FDRE) to 'FIR_Periph1/status_reg[11]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[11]' (FDRE) to 'FIR_Periph1/status_reg[12]'
+INFO: [Synth 8-3886] merging instance 'FIR_Periph1/status_reg[12]' (FDRE) to 'FIR_Periph1/status_reg[13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIR_Periph1/\status_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (Controller/DAC_manager/FSM_onehot_currentState_reg[1]) is unused and will be removed from module Axi4Lite_Equalizer.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Axi4Lite_DAC/\data_in_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Axi4Lite_ADC/\spi_wait_cycles_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Axi4Lite_ADC/\spi_data_width_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Axi4Lite_ADC/\data_in_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------------+-----------+----------------------+------------------+
+|FIR_Periph1 | ram_x0/ram_reg            | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | ram_x1/ram_reg            | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[1].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[2].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[3].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[4].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[5].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[6].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[7].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[8].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[9].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[10].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[11].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[12].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[0].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
++------------+---------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x4000)+A*B  | 16     | 16     | 16     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR_Periph  | (C:0x2000)+A2*B | 16     | 16     | 15     | -      | 30     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------------+-----------+----------------------+------------------+
+|FIR_Periph1 | ram_x0/ram_reg            | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | ram_x1/ram_reg            | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[1].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[2].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[3].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[4].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[5].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[6].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[7].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[8].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[9].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[10].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[11].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[12].ram_h/ram_reg | Implied   | 512 x 16             | RAM256X1S x 32   | 
+|FIR_Periph1 | genblk1[0].ram_h/ram_reg  | Implied   | 512 x 16             | RAM256X1S x 32   | 
++------------+---------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net wrData[15] is driving 195 big block pins (URAM, BRAM and DSP loads). Created 20 replicas of its driver. 
+INFO: [Synth 8-6064] Net \FIR_Periph1/A [15] is driving 195 big block pins (URAM, BRAM and DSP loads). Created 20 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    82|
+|3     |DSP48E1   |    26|
+|4     |LUT1      |     1|
+|5     |LUT2      |   514|
+|6     |LUT3      |   407|
+|7     |LUT4      |   166|
+|8     |LUT5      |    84|
+|9     |LUT6      |   407|
+|10    |MUXF7     |     4|
+|11    |MUXF8     |     1|
+|12    |RAM256X1S |   480|
+|13    |FDRE      |   447|
+|14    |FDSE      |     5|
+|15    |IBUF      |    34|
+|16    |OBUF      |    47|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------+---------------------+------+
+|      |Instance                |Module               |Cells |
++------+------------------------+---------------------+------+
+|1     |top                     |                     |  2706|
+|2     |  Axi4LiteSupporter1    |Axi4LiteSupporter    |   296|
+|3     |  Axi4Lite_ADC          |Axi4Lite_SPI         |   179|
+|4     |    Axi4LiteSupporter1  |Axi4LiteSupporter_17 |    24|
+|5     |  Axi4Lite_DAC          |Axi4Lite_SPI_0       |   146|
+|6     |    Axi4LiteSupporter1  |Axi4LiteSupporter_16 |     6|
+|7     |  Controller            |ADC_DAC_Controller   |   109|
+|8     |    ADC_manager         |Axi4LiteManager      |    36|
+|9     |    DAC_manager         |Axi4LiteManager_15   |    60|
+|10    |  FIR_Periph1           |FIR_Periph           |  1894|
+|11    |    \genblk1[0].ram_h   |ram                  |    55|
+|12    |    \genblk1[10].ram_h  |ram_1                |    54|
+|13    |    \genblk1[11].ram_h  |ram_2                |    54|
+|14    |    \genblk1[12].ram_h  |ram_3                |    59|
+|15    |    \genblk1[1].ram_h   |ram_4                |    55|
+|16    |    \genblk1[2].ram_h   |ram_5                |    54|
+|17    |    \genblk1[3].ram_h   |ram_6                |    54|
+|18    |    \genblk1[4].ram_h   |ram_7                |    54|
+|19    |    \genblk1[5].ram_h   |ram_8                |    54|
+|20    |    \genblk1[6].ram_h   |ram_9                |    54|
+|21    |    \genblk1[7].ram_h   |ram_10               |    54|
+|22    |    \genblk1[8].ram_h   |ram_11               |    54|
+|23    |    \genblk1[9].ram_h   |ram_12               |    54|
+|24    |    ram_x0              |ram_13               |    35|
+|25    |    ram_x1              |ram_14               |    95|
++------+------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 872.898 ; gain = 484.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 593 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 933.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 480 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 480 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+152 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 933.262 ; gain = 567.211
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 933.262 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/ESE465/FIR_Peripheral/FIR_Peripheral.runs/synth_1/Axi4Lite_Equalizer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Axi4Lite_Equalizer_utilization_synth.rpt -pb Axi4Lite_Equalizer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 18:18:32 2019...

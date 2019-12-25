@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="FIR_Periph_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="FIR_Periph_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="269832860000fs"></ZoomStartTime>
+      <ZoomEndTime time="273036860001fs"></ZoomEndTime>
+      <Cursor1Time time="271428860000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/FIR_Periph_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/enabled" type="logic">
+      <obj_property name="ElementShortName">enabled</obj_property>
+      <obj_property name="ObjectShortName">enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/calc" type="logic">
+      <obj_property name="ElementShortName">calc</obj_property>
+      <obj_property name="ObjectShortName">calc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/calcDone" type="logic">
+      <obj_property name="ElementShortName">calcDone</obj_property>
+      <obj_property name="ObjectShortName">calcDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/rawData" type="array">
+      <obj_property name="ElementShortName">rawData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rawData[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/channel" type="logic">
+      <obj_property name="ElementShortName">channel</obj_property>
+      <obj_property name="ObjectShortName">channel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/wrAddr" type="array">
+      <obj_property name="ElementShortName">wrAddr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wrAddr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/wrData" type="array">
+      <obj_property name="ElementShortName">wrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/wr" type="logic">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/rdAddr" type="array">
+      <obj_property name="ElementShortName">rdAddr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">rdAddr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/rdData" type="array">
+      <obj_property name="ElementShortName">rdData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1458">
+      <obj_property name="label">FIR calculation signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/channel_Q" type="logic">
+      <obj_property name="ElementShortName">channel_Q</obj_property>
+      <obj_property name="ObjectShortName">channel_Q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/atten" type="array">
+      <obj_property name="ElementShortName">atten[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">atten[0:12][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/data" type="array">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/outputData" type="array">
+      <obj_property name="ElementShortName">outputData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outputData[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/y_D" type="array">
+      <obj_property name="ElementShortName">y_D[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_D[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/temp_output" type="array">
+      <obj_property name="ElementShortName">temp_output[0:12][31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_output[0:12][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/MAC_D" type="array">
+      <obj_property name="ElementShortName">MAC_D[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAC_D[0:12][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/MAC" type="array">
+      <obj_property name="ElementShortName">MAC[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAC[0:12][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/MAC_D_temp" type="array">
+      <obj_property name="ElementShortName">MAC_D_temp[0:12][31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAC_D_temp[0:12][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/x" type="array">
+      <obj_property name="ElementShortName">x[1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[1:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/h" type="array">
+      <obj_property name="ElementShortName">h[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">h[0:12][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/hAddr" type="array">
+      <obj_property name="ElementShortName">hAddr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">hAddr[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/xAddr" type="array">
+      <obj_property name="ElementShortName">xAddr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">xAddr[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/currentIndex" type="array">
+      <obj_property name="ElementShortName">currentIndex[0:1][8:0]</obj_property>
+      <obj_property name="ObjectShortName">currentIndex[0:1][8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/hIndex" type="array">
+      <obj_property name="ElementShortName">hIndex[8:0]</obj_property>
+      <obj_property name="ObjectShortName">hIndex[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/currentState" type="array">
+      <obj_property name="ElementShortName">currentState[1:0]</obj_property>
+      <obj_property name="ObjectShortName">currentState[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider2231">
+      <obj_property name="label">Writing FIR stuff</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/wrX" type="array">
+      <obj_property name="ElementShortName">wrX[0:1]</obj_property>
+      <obj_property name="ObjectShortName">wrX[0:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/wrH" type="array">
+      <obj_property name="ElementShortName">wrH[0:12]</obj_property>
+      <obj_property name="ObjectShortName">wrH[0:12]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/Periph1/hData" type="array">
+      <obj_property name="ElementShortName">hData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hData[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group2197" type="group">
+      <obj_property name="label">x0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/FIR_Periph_tb/Periph1/ram_x0/ram" type="array">
+         <obj_property name="ElementShortName">ram[511:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[511:0][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2198" type="group">
+      <obj_property name="label">x1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/FIR_Periph_tb/Periph1/ram_x1/ram" type="array">
+         <obj_property name="ElementShortName">ram[511:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[511:0][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1479">
+      <obj_property name="label">Samples and taps</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/h" type="array">
+      <obj_property name="ElementShortName">h[12:0][278:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">h[12:0][278:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/x_1" type="array">
+      <obj_property name="ElementShortName">x_1[999:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_1[999:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIR_Periph_tb/x_2" type="array">
+      <obj_property name="ElementShortName">x_2[999:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_2[999:0][15:0]</obj_property>
+   </wvobject>
+</wave_config>

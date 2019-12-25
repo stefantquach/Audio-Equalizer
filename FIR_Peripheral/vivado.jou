@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 11 17:59:02 2019
+# Process ID: 19144
+# Current directory: H:/ESE465/FIR_Peripheral
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13236 H:\ESE465\FIR_Peripheral\FIR_Peripheral.xpr
+# Log file: H:/ESE465/FIR_Peripheral/vivado.log
+# Journal file: H:/ESE465/FIR_Peripheral\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/ESE465/FIR_Peripheral/FIR_Peripheral.xpr
+set_property is_enabled false [get_files  H:/ESE465/FIR_Peripheral/Axi4FIR_Periph_tb_behav.wcfg]
+set_property top FIR_Periph_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+open_wave_config H:/ESE465/FIR_Peripheral/FIR_Periph_tb_behav.wcfg
+source FIR_Periph_tb.tcl
+run 500us
+close_sim
+set_property top Axi4FIR_Periph_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property is_enabled false [get_files  H:/ESE465/FIR_Peripheral/FIR_Periph_tb_behav.wcfg]
+set_property is_enabled true [get_files  H:/ESE465/FIR_Peripheral/Axi4FIR_Periph_tb_behav.wcfg]
+launch_simulation
+open_wave_config H:/ESE465/FIR_Peripheral/Axi4FIR_Periph_tb_behav.wcfg
+source Axi4FIR_Periph_tb.tcl
+run 500us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

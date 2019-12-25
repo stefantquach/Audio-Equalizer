@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov  3 15:05:05 2019
+# Process ID: 14372
+# Current directory: H:/ESE465/Vivado/SPI_periph/SPI_periph.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source H:/ESE465/Vivado/SPI_periph/SPI_periph.sim/sim_1/behav/xsim/xsim.dir/Axi4Lite_SPI_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: H:/ESE465/Vivado/SPI_periph/SPI_periph.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: H:/ESE465/Vivado/SPI_periph/SPI_periph.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source H:/ESE465/Vivado/SPI_periph/SPI_periph.sim/sim_1/behav/xsim/xsim.dir/Axi4Lite_SPI_tb_behav/webtalk/xsim_webtalk.tcl -notrace

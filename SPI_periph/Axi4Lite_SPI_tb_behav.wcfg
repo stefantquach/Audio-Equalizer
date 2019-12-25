@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Axi4Lite_SPI_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Axi4Lite_SPI_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="40897041596fs"></ZoomStartTime>
+      <ZoomEndTime time="42259509516fs"></ZoomEndTime>
+      <Cursor1Time time="40575893000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/wrAddr" type="array">
+      <obj_property name="ElementShortName">wrAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wrAddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/wrData" type="array">
+      <obj_property name="ElementShortName">wrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrData[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/wr" type="logic">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/wrDone" type="logic">
+      <obj_property name="ElementShortName">wrDone</obj_property>
+      <obj_property name="ObjectShortName">wrDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/rdAddr" type="array">
+      <obj_property name="ElementShortName">rdAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rdAddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/rdData" type="array">
+      <obj_property name="ElementShortName">rdData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/rdDone" type="logic">
+      <obj_property name="ElementShortName">rdDone</obj_property>
+      <obj_property name="ObjectShortName">rdDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider84">
+      <obj_property name="label">SPI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/SCK" type="logic">
+      <obj_property name="ElementShortName">SCK</obj_property>
+      <obj_property name="ObjectShortName">SCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/SDI" type="logic">
+      <obj_property name="ElementShortName">SDI</obj_property>
+      <obj_property name="ObjectShortName">SDI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/SDO" type="logic">
+      <obj_property name="ElementShortName">SDO</obj_property>
+      <obj_property name="ObjectShortName">SDO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/CS" type="logic">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/temp_data_out" type="array">
+      <obj_property name="ElementShortName">temp_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/currentState" type="array">
+      <obj_property name="ElementShortName">currentState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currentState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/spi_wait_cycles" type="array">
+      <obj_property name="ElementShortName">spi_wait_cycles[9:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_wait_cycles[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/wr" type="logic">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/wrAddr" type="array">
+      <obj_property name="ElementShortName">wrAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wrAddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/wrData" type="array">
+      <obj_property name="ElementShortName">wrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/counter" type="array">
+      <obj_property name="ElementShortName">counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/rdData" type="array">
+      <obj_property name="ElementShortName">rdData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/wait_counter" type="array">
+      <obj_property name="ElementShortName">wait_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wait_counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Axi4Lite_SPI_tb/Axi4Lite_SPI1/spi_data_width" type="array">
+      <obj_property name="ElementShortName">spi_data_width[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_data_width[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

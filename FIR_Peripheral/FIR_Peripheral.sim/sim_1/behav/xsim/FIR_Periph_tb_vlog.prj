@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteManager.v" \
+"../../../../../Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v" \
+"../../../../FIR_Peripheral.srcs/sources_1/imports/new/ram.v" \
+"../../../../FIR_Peripheral.srcs/sources_1/new/FIR_Periph.v" \
+"../../../../FIR_Peripheral.srcs/sources_1/new/Axi4Lite_Equalizer.v" \
+"../../../../FIR_Peripheral.srcs/sources_1/new/ADC_DAC_Manager.v" \
+"../../../../../SPI_periph/SPI_periph.srcs/sources_1/new/Axi4Lite_SPI.v" \
+"../../../../FIR_Peripheral.srcs/sim_1/new/FIR_Periph_tb.v" \
+"../../../../FIR_Peripheral.srcs/sim_1/new/Axi4FIR_Periph_tb.v" \
+"../../../../DacTester.v" \
+"../../../../AdcTester.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

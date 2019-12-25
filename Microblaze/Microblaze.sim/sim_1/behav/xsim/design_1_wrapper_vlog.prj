@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Microblaze.srcs/sources_1/bd/design_1/ipshared/c923" --include "../../../../Microblaze.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../../Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteSupporter.v" \
+"../../../../../Axi4LiteRegs/Axi4LiteRegs.srcs/sources_1/new/Axi4LiteRegs.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_Axi4LiteRegs_0_0/sim/design_1_Axi4LiteRegs_0_0.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.v" \
+"../../../../Microblaze.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../Microblaze.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

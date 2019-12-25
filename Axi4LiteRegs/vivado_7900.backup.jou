@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  4 22:14:07 2019
+# Process ID: 7900
+# Current directory: C:/Users/stefa/Documents/Axi4LiteRegs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23016 C:\Users\stefa\Documents\Axi4LiteRegs\Axi4LiteRegs.xpr
+# Log file: C:/Users/stefa/Documents/Axi4LiteRegs/vivado.log
+# Journal file: C:/Users/stefa/Documents/Axi4LiteRegs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa/Documents/Axi4LiteRegs/Axi4LiteRegs.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+source Axi4Lite_tb.tcl
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg}
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+source Axi4Lite_tb.tcl
+create_wave_config
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+set_property xsim.view {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav.wcfg
+open_wave_config C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg
+source Axi4Lite_tb.tcl
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg}
+save_wave_config {C:/Users/stefa/Documents/Axi4LiteRegs/Axi4Lite_tb_behav1-write.wcfg}
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

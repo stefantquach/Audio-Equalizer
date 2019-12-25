@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 18 18:34:26 2019
+# Process ID: 20340
+# Current directory: H:/ESE465/Equalizer project files/Microblaze
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54120 H:\ESE465\Equalizer project files\Microblaze\Microblaze.xpr
+# Log file: H:/ESE465/Equalizer project files/Microblaze/vivado.log
+# Journal file: H:/ESE465/Equalizer project files/Microblaze\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/ESE465/Equalizer project files/Microblaze/Microblaze.xpr}
+update_compile_order -fileset sources_1

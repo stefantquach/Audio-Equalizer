@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  5 12:59:19 2019
+# Process ID: 18024
+# Current directory: H:/ESE465/Microblaze
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15332 H:\ESE465\Microblaze\Microblaze.xpr
+# Log file: H:/ESE465/Microblaze/vivado.log
+# Journal file: H:/ESE465/Microblaze\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/ESE465/Microblaze/Microblaze.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+launch_sdk -workspace H:/ESE465/Microblaze/Microblaze.sdk -hwspec H:/ESE465/Microblaze/Microblaze.sdk/design_1_wrapper.hdf
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {H:/ESE465/Microblaze/Microblaze.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
